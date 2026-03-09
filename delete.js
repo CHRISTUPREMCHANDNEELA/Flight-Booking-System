@@ -10,3 +10,10 @@ const PhoneSpan = document.getElementById("phone");
 const journeyPlaceSpan = document.getElementById("journeyPlace");
 const journeyDateSpan = document.getElementById("journeyDate");
 
+if (!email)return alert("Please enter your email");
+
+try{
+    const res =await fetch('hhtp://localhost:3000/api/bookings/email/${email}');
+    const data = await res.json();
+
+}
