@@ -36,3 +36,14 @@ try {
     alert("Error fetching booking");
 }
 });
+
+deleteBtn.addEventListener("click", async () => {
+    if (!currntEmail) return alert("No booking selected");
+
+    if (!confirm("Are you sure you want to delete this booking?")) return;
+
+    try{
+        const res = await fetch('http://localhost:3000/api/bookings/email/${currentEmail}', {method: "Delete" });
+        const data = await res.json();
+        }
+})
