@@ -20,4 +20,19 @@ try {
     const res = await fetch('hhtp://localhost:3000/api/bookings/email/${email}');
     const data = await res.json();
 
+    if (!res.ok) return alert(data,message || "Booking not found");
+
+    currentEmail = email;
+    nameSpan.textContent = data.name;
+    genderSpan.textcontent = data.gender;
+    ageSpan.textContent = data.age;
+    PhoneSpan.textContent = data.phone;
+    journeyPlaceSpan.textContent = data.journeyPlace;
+    journeyDateSpan.textContent = new Date(data.journeyDate).toLocaleDateString();
+
+    bookingDetails.style.display = "block";
+} catch (err) {
+    console.error(err);
+    alert("Error fetching booking");
 }
+});
