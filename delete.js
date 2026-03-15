@@ -45,5 +45,17 @@ deleteBtn.addEventListener("click", async () => {
     try{
         const res = await fetch('http://localhost:3000/api/bookings/email/${currentEmail}', {method: "Delete" });
         const data = await res.json();
+
+        if (res.ok) {
+            alert("Booking deleted successfully!");
+            bookingDetails.style.display = "none";
+            emailSearch.value = "";
+            currentEmail = null;
+        } else {
+            alert(data.message || "Error deleting booking");
         }
-})
+    } catch (err) {
+        console.error(err);
+        alert("server error deleting booking");
+    }
+});
