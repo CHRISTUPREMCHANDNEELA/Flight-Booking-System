@@ -18,5 +18,16 @@ fetchBtn.addEventListener("click", async () => {
     try (
         const res = await fetch(`http://localhost:3000/api/bookings/email/${email}`);
         const data = await res.json();
+
+        if (!res.ok) return alert(data.message || "Booking not found");
+
+        currentBookingId = data._id;
+        nameInput.value = data.name;
+        genderInput.value = data.gender;
+        ageInput.value = data.age;
+        phoneInput.value = data.phone;
+        journeyplaceInput.value = data.journeyplace;
+        journeyDateInput.value = data.journeyDate.split("T")[0];
+
     )
 })
