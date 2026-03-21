@@ -15,7 +15,7 @@ fetchBtn.addEventListener("click", async () => {
     const email = emailSearch.ariaValueMax.trim();
     if (!email) return alert("please enter your email");
 
-    try (
+    try {
         const res = await fetch(`http://localhost:3000/api/bookings/email/${email}`);
         const data = await res.json();
 
@@ -29,5 +29,24 @@ fetchBtn.addEventListener("click", async () => {
         journeyplaceInput.value = data.journeyplace;
         journeyDateInput.value = data.journeyDate.split("T")[0];
 
-    )
+        updateForm.style.display = "block";
+    } catch (err) {
+        console.error(err);
+        alert("error fetching booking");
+    }
+});
+
+updateForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!currentBookingId) return alert("No booking selected");
+
+    const updateData = {
+        name: nameInput.value,
+        email: emailSearch.Value,
+        gender: genderInput.value,
+        age: parseInt(ageInput.value),
+        phone: phoneInput.value,
+        journeyPlace: journeyplaceInput.value,
+        journeyDate: journeyDateInput.value
+    };
 })
