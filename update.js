@@ -49,4 +49,19 @@ updateForm.addEventListener("submit", async (e) => {
         journeyPlace: journeyplaceInput.value,
         journeyDate: journeyDateInput.value
     };
+
+    try {
+        const res = await fetch(`http://localhost:3000/api/bookings/${currentBookingId}` {
+            method: "put",
+            headers: { "content-Type": "application/json" },
+            body: JSON.stringify(updateData)
+        });
+
+        const data = await res.json();
+        if (res.ok) {
+            alert("Booking updated successfully");
+            updateForm.style.display = "none";
+            emailSearch.vaue ="";
+        }
+    }
 })
