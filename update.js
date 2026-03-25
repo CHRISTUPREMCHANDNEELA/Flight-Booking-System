@@ -62,6 +62,11 @@ updateForm.addEventListener("submit", async (e) => {
             alert("Booking updated successfully");
             updateForm.style.display = "none";
             emailSearch.vaue ="";
+        } else {
+            alert(data.message || "Error updating booking");    
         }
+    } catch (err) {
+        console.error(err);
+        alert("server error updating booking");
     }
-})
+});
