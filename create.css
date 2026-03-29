@@ -28,4 +28,64 @@ h1 {
 .nav-button {
     margin-bottom: 30px;
 }
-c
+
+.nav-buttons button {
+    margin: 5px;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    boder-radius: 8px;
+    background-color: #0078d4;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #005fa3;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,1);
+}
+
+.form-container input,
+.form-container select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #0078d4;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #005fa3;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .nav-buttons button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
