@@ -1,0 +1,28 @@
+{
+"name": "abbeyflight",
+"version": "1.0.0",
+"main": "create.js",
+
+"scripts": {
+    "test": "jest"
+}
+,
+ "keywords": []
+ "author": "",
+ "license": "ISC",
+ "description": "",
+ "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
+ },
+ "devDependencies": {
+    "chai": "^6.2.0",
+    "chai-http": "^5.1.2",
+    "jest": "^30.2.0",
+    "mocha": "^11.7.4",
+    "supertest": "^7.1.4"
+ }
+}
+ 
