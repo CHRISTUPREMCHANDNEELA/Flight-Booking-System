@@ -38,3 +38,53 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
+.nav-buttons button:hover {
+    background-color: #005fa3;
+}
+
+.search-sort {
+    margin-bottom: 20px;
+}
+
+.search-sort input,search-sort select, .search-sort button {
+    padding: 8px 12px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.search-sort button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-sort button hover {
+    background-color: #005fa3;
+}
+
+table-container {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0078d4;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
