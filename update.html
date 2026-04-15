@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DUpdate Booking - Abbey Flight</title>
+  <meta charset="UTF-8">
+  <title>Update Booking - Abbey Flight</title>
+  <link rel="stylesheet" href="update.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Abbey Flight Booking</h1>
-        <h3 class="location">Dublin, Ireland</h3>
+  <div class="container">
+    <h1>Abbey Flight Booking</h1>
+    <h3 class="location">Dublin, Ireland</h3>
 
-        <div class="nav-buttons">
-            <button onclick="location.href='create.html'">Create Booking</button>
-            <button onclick="location.href='read.html'">View Booking</button>
-            <button onclick="location.href='Update Booking'">Update Booking</button>
-            <button onclick="location.href='delete.html'">Delete Booking</button>
-        </div>
-
-        <div class="from-container">
-            <h2>Update Booking</h2>
-            <input type="email" id="emailSearch" placeholder="Enter your email" required>
-            <button id="fetchBtn">Fetch Booking</button>
-
-            <form id="updateForm" style="display:none;">
-                <input type="text" id="name" placeholder="Full Nmae" required>
-                <select id="Gender" required>
-                    <option value="">Select Gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-                <input type="number" id="age" placeholder="Age" min="0" required>
-                <input type="tel" id="phone" placeholder="Phone Number" required>
-                <input type="text" id="journeyPlace" placeholder="Journey Place" required>
-                <input type="date" id="journeyDate" placeholder="Journey Date" required>
-                <button type="submit">Save Changes</button>
-            </form>
-        </div>
+    <div class="nav-buttons">
+      <button onclick="location.href='create.html'">Create Booking</button>
+      <button onclick="location.href='read.html'">View Bookings</button>
+      <button onclick="location.href='update.html'">Update Booking</button>
+      <button onclick="location.href='delete.html'">Delete Booking</button>
     </div>
 
-    <script src="update.js"></script>
-    
+    <div class="form-container">
+      <h2>Update Booking</h2>
+      <input type="email" id="emailSearch" placeholder="Enter your email" required>
+      <button id="fetchBtn">Fetch Booking</button>
+
+      <form id="updateForm" style="display:none;">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <select id="gender" required>
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="number" id="age" placeholder="Age" min="0" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="journeyPlace" placeholder="Journey Place" required>
+        <input type="date" id="journeyDate" required>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="update.js"></script>
 </body>
 </html>

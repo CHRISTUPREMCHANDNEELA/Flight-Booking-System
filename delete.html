@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Delete Booking - Abbey Flight</title>
+  <meta charset="UTF-8">
+  <title>Delete Booking - Abbey Flight</title>
+  <link rel="stylesheet" href="delete.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Abbey Flight Booking</h1>
-        <h3 class="location">Dublin, Ireland</h3>
+  <div class="container">
+    <h1>Abbey Flight Booking</h1>
+    <h3 class="location">Dublin, Ireland</h3>
 
-        <div class="nav-buttons">
-            <button onclick="location.href='create.html'">Create Booking</button>
-            <button onclick="location.href='read.html'">View Booking</button>
-            <button onclick="location.href='update.html'">Update Booking</button>
-            <button onclick="location.href='delete.html'">Delete Booking</button>
-        </div>
-
-        <div class="from-container">
-            <h2>Delete Booking</h2>
-            <input type="email" id="emailSearch" placeholder="Enter your Email" required>
-            <button id="fetchBtn">Fetch Booking</button>
-
-            <div id="BookingDetails" style="display:none;">
-                <p><strong>Name:</strong> <span id="name"></span></p>
-                <p><strong>Gender:</strong> <span id="Gneder"></span></p>
-                <p><strong>Age:</strong> <span id="Age"></span></p>
-                <p><strong>Phone:</strong> <span id="Phone"></span></p>
-                <p><strong>Journey Place:</strong> <span id="Journey Place"></span></p>
-                <p><strong>Journey Date:</strong> <span id="Journey Date"></span></p>
-                <button id="deleteBtn">Delete Booking</button>
-            </div>
-        </div>
+    <div class="nav-buttons">
+      <button onclick="location.href='create.html'">Create Booking</button>
+      <button onclick="location.href='read.html'">View Bookings</button>
+      <button onclick="location.href='update.html'">Update Booking</button>
+      <button onclick="location.href='delete.html'">Delete Booking</button>
     </div>
 
-    <script src="delete.js"></script>
+    <div class="form-container">
+      <h2>Delete Booking</h2>
+      <input type="email" id="emailSearch" placeholder="Enter your email" required>
+      <button id="fetchBtn">Fetch Booking</button>
+
+      <div id="bookingDetails" style="display:none;">
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Gender:</strong> <span id="gender"></span></p>
+        <p><strong>Age:</strong> <span id="age"></span></p>
+        <p><strong>Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Journey Place:</strong> <span id="journeyPlace"></span></p>
+        <p><strong>Journey Date:</strong> <span id="journeyDate"></span></p>
+        <button id="deleteBtn">Delete Booking</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="delete.js"></script>
 </body>
 </html>

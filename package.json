@@ -3,33 +3,24 @@
   "version": "1.0.0",
   "main": "create.js",
   "scripts": {
-    "test": "jest",
-    "start": "node server.js"
-  },
+  "test": "jest"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "In this System, users can Book ticket by using create, and admin team can veiw the tickets,update and delete the Booking",
+  "description": "",
   "dependencies": {
-    "body-parser": "^2.2.2",
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "mongoose": "^8.23.0"
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
   },
   "devDependencies": {
-    "chai": "^6.2.2",
+    "chai": "^6.2.0",
     "chai-http": "^5.1.2",
-    "jest": "^30.3.0",
-    "mocha": "^11.7.5",
-    "supertest": "^7.2.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CHRISTUPREMCHANDNEELA/Flight-Booking-System.git"
-  },
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/CHRISTUPREMCHANDNEELA/Flight-Booking-System/issues"
-  },
-  "homepage": "https://github.com/CHRISTUPREMCHANDNEELA/Flight-Booking-System#readme"
+    "jest": "^30.2.0",
+    "mocha": "^11.7.4",
+    "supertest": "^7.1.4"
+  }
 }

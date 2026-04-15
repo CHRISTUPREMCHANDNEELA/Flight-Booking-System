@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Veiw Bookings - Abbey Flight</title>
+  <meta charset="UTF-8">
+  <title>View Bookings - Abbey Flight</title>
+  <link rel="stylesheet" href="read.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Abbey Flight Booking</h1>
-        <h3 class="location">Dublin, Ireland</h3>
+  <div class="container">
+    <h1>Abbey Flight Booking</h1>
+    <h3 class="location">Dublin, Ireland</h3>
 
-        <div class="nav-buttons">
-            <button onclick="location.href='create.html'">Create Booking</button>
-            <button onclick="location.href='read.html'">View Booking</button>
-            <button onclick="location.href='update.html'">Update Booking</button>
-            <button onclick="location.href='delete.html'">Delete Booking</button>
-        </div>
-
-        <div class="search-sort">
-            <input type="text" id="searchInput" placeholder="Search by name or email">
-            <select id="sortSelect">
-                <option value="">Sort By</option>
-                <option value="name">Name</option>
-                <option value="date">Journey Date</option>
-            </select>
-            <button id="searchBtn">Search</button>
-        </div>
-
-        <div class="table-container">
-            <table id="bookingstable">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Gender</th>
-                        <th>Age</th>
-                        <th>Phone</th>
-                        <th>Journey Place</th>
-                        <th>Journey Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                </tbody>
-            </table>
-        </div>
+    <div class="nav-buttons">
+      <button onclick="location.href='create.html'">Create Booking</button>
+      <button onclick="location.href='read.html'">View Bookings</button>
+      <button onclick="location.href='update.html'">Update Booking</button>
+      <button onclick="location.href='delete.html'">Delete Booking</button>
     </div>
-    
+
+    <div class="search-sort">
+      <input type="text" id="searchInput" placeholder="Search by name or email">
+      <select id="sortSelect">
+        <option value="">Sort By</option>
+        <option value="name">Name</option>
+        <option value="date">Journey Date</option>
+      </select>
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="table-container">
+      <table id="bookingsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Journey Place</th>
+            <th>Journey Date</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="read.js"></script>
 </body>
 </html>
